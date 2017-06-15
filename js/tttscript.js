@@ -1,7 +1,9 @@
 'use strict';
 $(document).ready(function() {
-// Put app logic in here
+/* TIC TAC TOE JS LOGIC */
+
   var turn = true;
+  /* X or O PLAY */
   var toggle = function () {
       if (!this.innerHTML) {
         var letter = turn ? 'X' : 'O';
@@ -10,6 +12,7 @@ $(document).ready(function() {
         checkWin();
       }
     }
+    /*CLEAR BOARD BACK TO START function */
     var clearBoard = function () {
       $('#tttr1>div').empty();
       $('#tttr2>div').empty();
@@ -17,8 +20,8 @@ $(document).ready(function() {
       $('#announce-winner').empty();
       turn = true;
     }
-    $('div>div').click(toggle);
-    $('#clear').click(clearBoard);
+    $('.tttbox').click(toggle);
+    $('#tttclear').click(clearBoard);
 
 // check to see if the game is won
     var checkWin = function() {

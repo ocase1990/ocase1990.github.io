@@ -1,11 +1,14 @@
+/* TIC TAC TOE GAME BOARD STYLE */
 .game {
-  margin: 0 auto;
-  margin-top: 6%;
+  margin: auto;
+  margin-bottom: 100px;
   width: 350px;
   height: 350px;
+  padding-left: 15px;
 
 
 }
+/* TTTR = TIC TAC TOE ROW 1,2,3 */
 #tttr1 > div,
 #tttr2 > div,
 #tttr3 > div {
@@ -19,12 +22,12 @@
   color: #FFFFFF;
 }
 
+/* CLEAR BOARD BUTTON*/
 button {
   color: #000000;
   border: 2px solid #000000;
   font-size: 24px;
   border-radius: 100px;
-  margin: 6%;
 }
 .row {
   clear: both;
@@ -36,10 +39,8 @@ button {
   color: #FFFFFF;
 
 }
-#clear {
-  margin-bottom: 25px;
-}
 
+/* INDIVIDUAL BOX EDITS */
 #zero {border-top: 0px; border-left: 0px;}
 #one {border-top: 0px;}
 #two {border-top: 0px; border-right: 0px;}
@@ -48,3 +49,15 @@ button {
 #six {border-left: 0px; border-bottom: 0px;}
 #seven {border-bottom: 0px;}
 #eight {border-bottom: 0px; border-right: 0px;}
+
+/*MOBILE COMP*/
+@media screen and (max-width: 320px) {
+  .game {
+
+  }
+}
+@media screen and (min-width: 321px) {
+  .game {
+    padding-left: 45px;
+  }
+}

@@ -13,10 +13,12 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/tttstyle.css" rel="stylesheet">
+
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/tttstyle.css" rel="stylesheet">
+    <link href="css/hanoistyle.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,14 +42,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">My Portfolio</a>
+                <a class="navbar-brand" href="#">Casey O'Keefe</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                  <!-- commenting out until pages are made
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact</a></li>
+                  -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -61,121 +65,101 @@
         <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Work of Mine
+                <h1 class="page-header">My Work
                     <small>Most Recent First</small>
                 </h1>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Project One -->
+
+<!-- Project template
+<div class="row">
+    <div class="col-md-7">
+        <a href="#">
+            <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+        </a>
+    </div>
+    <div class="col-md-5">
+        <h3>Project Template</h3>
+        <h4>Subheading</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+        <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+</div>
+-->
+
+
+        <!-- Towers of hanoi project -->
         <div class="row">
             <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
+              <div class="board">
+                <div data-stack="1">
+                  <div data-block="125"></div>
+                  <div data-block="100"></div>
+                  <div data-block="75"></div>
+                  <div data-block="50"></div>
+                  <div data-block="25"></div>
+                </div>
+                <div data-stack="2">
+                </div>
+                <div data-stack="3">
+                </div>
+                <div id="hanoiannouncement"></div>
+                <button id="clear">Reset Game</button>
             </div>
+          </div>
             <div class="col-md-5">
-                <h3>Project One</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <h3>Towers of Hanoi</h3>
+                <h4>Drag and Drop Game Using Javascript/JQuery</h4>
+                <p>This game starts with ascending sized rings and 3 columns. You can drag and drop the rings to the different columns. The goal is to take the stack of rings and move it to the bottom stack.
+                You can only place a ring in an empty column or on top of a larger ring. You cannot place a ring on top of a smaller ring. The game is coded to prevent bad moves and knows when the game is won.
+                (All the rings stacked at the bottom largest on the left to smallest on the right.)</p>
             </div>
         </div>
+
         <!-- /.row -->
 
         <hr>
 
-        <!-- Project Two -->
+        <!-- Tic tac toe project -->
         <div class="row">
             <div class="col-md-7">
               <div class="game">
-              <div id="tttr1" class="row">
-                <div id="zero"></div>
-                <div id="one"></div>
-                <div id="two"></div>
+              <div id="tttr1" class="tttrow">
+                <div id="zero" class="tttbox"></div>
+                <div id="one" class="tttbox"></div>
+                <div id="two" class="tttbox"></div>
               </div>
-              <div id="tttr2" class="row">
-                <div id="three"></div>
-                <div id="four"></div>
-                <div id="five"></div>
+              <div id="tttr2" class="tttrow">
+                <div id="three" class="tttbox"></div>
+                <div id="four" class="tttbox"></div>
+                <div id="five" class="tttbox"></div>
               </div>
-              <div id="tttr3" class="row">
-                <div id="six"></div>
-                <div id="seven"></div>
-                <div id="eight"></div>
+              <div id="tttr3" class="tttrow">
+                <div id="six" class="tttbox"></div>
+                <div id="seven" class="tttbox"></div>
+                <div id="eight" class="tttbox"></div>
               </div>
               <div id="announce-winner"></div>
-              <button id="clear">Clear Board</button>
+              <button id="tttclear">Clear Board</button>
             </div>
             </div>
             <div class="col-md-5">
-                <h3>Project Two</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <h3>Tic-Tac-Toe</h3>
+                <h4>Uses Javascript/Jquery</h4>
+                <p>
+                  This is a simple javascript/jquery tic-tac-toe game that is full functional and is able to use
+                  logic to know when someone is the winner.
+                </p>
             </div>
         </div>
         <!-- /.row -->
 
-        <hr>
-
-        <!-- Project Three -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Project Three</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
 
         <hr>
 
-        <!-- Project Four -->
-        <div class="row">
-
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Project Four</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Five -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>Project Five</h3>
-                <h4>Subheading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
-                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Pagination -->
+        <!-- Pagination
         <div class="row text-center">
             <div class="col-lg-12">
                 <ul class="pagination">
@@ -203,6 +187,7 @@
                 </ul>
             </div>
         </div>
+      -->
         <!-- /.row -->
 
         <hr>
@@ -211,7 +196,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Casey O'Keefe 2017</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -224,8 +209,12 @@
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/tttscript.js"></script>
+    <script type="text/javascript" src="js/hanoiscript.js"></script>
 
 </body>
 
