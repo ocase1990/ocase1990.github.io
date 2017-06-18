@@ -12,6 +12,7 @@ $(document).ready(function() {
         checkWin();
       }
     }
+
     /*CLEAR BOARD BACK TO START function */
     var clearBoard = function () {
       $('#tttr1>div').empty();
@@ -37,7 +38,7 @@ $(document).ready(function() {
     /* horizontal win */
       if (($0mark + $1mark + $2mark === 'XXX') || ($0mark + $1mark + $2mark === 'OOO')) {
         clearBoard();
-        $('#announce-winner').html($0mark + "'s win!");
+        $('#announce-winner').html($0mark + "'s win!!");
       } else if (($3mark + $4mark + $5mark === 'XXX') || ($3mark + $4mark + $5mark === 'OOO')) {
         $('#announce-winner').html($3mark + "'s win!");
       } else if (($6mark + $7mark + $8mark === 'XXX') || ($6mark + $7mark + $8mark === 'OOO')) {
