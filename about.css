@@ -1,0 +1,107 @@
+body {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/contemporary_china_2.png");
+  height: 100%;
+  width: 100%;
+
+}
+
+.navbar-brand >span {
+  text-align: center;
+}
+.navbar-nav {
+  text-align: center!important;
+}
+.navbar-nav > li {
+  margin-left: 5px;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+}
+.linkbar {
+  border: 0px!important;
+  background-color: #222;
+  margin-top: 50px!important;
+  width: 100%;
+
+}
+.localLinks {
+
+}
+.localLinks > li {
+  list-style: none;
+  display: inline;
+  padding-top: 5px;
+
+}
+.localLinks > li > a {
+  text-decoration: none;
+  color: #9d9d9d!important;
+  text-align: center;
+  padding: 15px;
+
+}
+.localLinks > li > a:hover {
+  text-decoration: none;
+  color: white!important;
+}
+.title {
+  font-family: 'Amatic SC', cursive;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.row {
+  margin: 1%;
+}
+p {
+
+}
+
+@media screen and (max-width: 1199px) {
+  #picture1, #picture3 {
+    width: 400px;
+  }
+  #calendariframe {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .navbar-nav > li {
+    font-size: 1.25em;
+
+  }
+}
+@media screen and (max-width: 871px) {
+  .nav>li>a {
+    padding: 15px 10px 15px 10px!important;
+  }
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 450px) {
+  img {
+    max-width: 280px;
+  }
+  .localLinks > li > a {
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+
+  }
+}
