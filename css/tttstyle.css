@@ -8,6 +8,10 @@
 
 }
 
+.headshot {
+  border: 2px solid grey;
+  border-radius: 360px;
+}
 .gamesection {
   background-image: url("https://ak5.picdn.net/shutterstock/videos/17685085/thumb/1.jpg");
   width: 300px;
